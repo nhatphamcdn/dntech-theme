@@ -10,6 +10,7 @@ require_once get_stylesheet_directory() . '/lib/customize.php';
 require_once get_stylesheet_directory() . '/lib/nav-custom.php';
 require_once get_stylesheet_directory() . '/lib/structure/header.php';
 require_once get_stylesheet_directory() . '/lib/function-custom.php';
+require_once get_stylesheet_directory() . '/lib/custom-widget.php';
 
 /**
  * Custom wrap class
@@ -79,3 +80,8 @@ function change_default_jquery( ){
 	}
 }
 
+
+add_action( 'widgets_init', 'custom_widget_init' );
+function custom_widget_init() {
+	register_widget('Custom_Genesis_Post');
+}
