@@ -177,6 +177,15 @@ nav[aria-label="navigation"] {
     }
 }
 
+.tag-cloud-link {
+    padding: 4px 12px;
+    gap: 10px;
+
+    background: rgba(94, 166, 248, 0.2);
+    border-radius: 5px;
+    font-size: 1rem !important;
+}
+
 
 @include mobile-style {
     .search-form {

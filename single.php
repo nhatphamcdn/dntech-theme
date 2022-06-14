@@ -31,28 +31,30 @@ $category_query = new WP_Query($args);
                     <?php get_sidebar('primary-sidebar'); ?>
                 </div>
                 <div class="col-md-8">
-                    <?php if (get_the_post_thumbnail(get_the_ID()) != '') : ?>
-                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top" alt="<?php echo get_the_title(); ?>">
-                    <?php endif; ?>
-                    <div class="card-body px-0 pb-0">
-                        <div class="mb-3 d-flex">
-                            <div class="card-info">
-                                <i class="fa">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/user.svg" alt="author">
-                                </i>
-                                <small><?php echo get_the_author(); ?></small>
+                    <div class="card border-0 mb-5 pb-3">
+                        <?php if (get_the_post_thumbnail(get_the_ID()) != '') : ?>
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>"  alt="<?php echo get_the_title(); ?>">
+                        <?php endif; ?>
+                        <div class="card-body px-0 pb-0">
+                            <div class="mb-3 d-flex">
+                                <div class="card-info">
+                                    <i class="fa">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/user.svg" alt="author">
+                                    </i>
+                                    <small><?php echo get_the_author(); ?></small>
+                                </div>
+                                <div class="card-info mx-5">
+                                    <i class="fa">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/calendar.svg" alt="publish date">
+                                    </i>
+                                    <small><?php echo get_the_date(); ?></small>
+                                </div>
                             </div>
-                            <div class="card-info mx-5">
-                                <i class="fa">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/calendar.svg" alt="publish date">
-                                </i>
-                                <small><?php echo get_the_date(); ?></small>
-                            </div>
+                            <h5 class="card-title mb-2"><?php the_title(); ?></h5>
                         </div>
-                        <h5 class="card-title mb-2"><?php the_title(); ?></h5>
-                    </div>
-                    <div>
-                        <?php the_content(); ?>
+                        <div>
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 </div>
             </div>
