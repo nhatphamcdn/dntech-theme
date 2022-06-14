@@ -27,10 +27,10 @@ $category_query = new WP_Query($args);
     <div class="container">
         <div class="px-md-4 px-lg-5">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 pe-md-4">
                     <?php get_sidebar('primary-sidebar'); ?>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 ps-md-5">
                     <div class="card border-0 mb-5 pb-3">
                         <?php if (get_the_post_thumbnail(get_the_ID()) != '') : ?>
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>"  alt="<?php echo get_the_title(); ?>">
