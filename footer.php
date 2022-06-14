@@ -13,7 +13,7 @@ do_action( 'genesis_before_footer' );
 <footer class="section-with-bg">
     <div class="container-fluid footer pt-md-5 pb-4">
         <div class="container">
-            <div class="px-4 px-lg-5">
+            <div class="px-md-4 px-lg-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo@2x.png" alt="Logo">
@@ -63,7 +63,7 @@ do_action( 'genesis_before_footer' );
                 </div>
             </div>
             <div class="container">
-                <div class="pt-4 mt-5 px-4 px-lg-5">
+                <div class="pt-4 mt-5 px-md-4 px-lg-5">
                     <div class="copyright">
                         <div class="row align-md-items-center">
                             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">

@@ -25,7 +25,7 @@ $category_query = new WP_Query($args);
 ?>
 <div class="container-xxl">
     <div class="container">
-        <div class="px-4 px-lg-5">
+        <div class="px-md-4 px-lg-5">
             <div class="row">
                 <div class="col-md-4">
                     <?php get_sidebar('primary-sidebar'); ?>

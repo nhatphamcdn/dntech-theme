@@ -24,7 +24,7 @@ get_header();
             <img class="img-fluid w-100 h-100" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/banner.png" alt="Hero Image">
         </div>
         <div class="container-xxl position-relative z-index-above">
-            <div class="px-4 px-lg-5 py-3 py-lg-0">
+            <div class="px-md-4 px-lg-5 py-3 py-lg-0">
                 <div class="row align-items-center">
                     <div class="col-lg-6 text-center text-lg-start">
                         <div class="hero-header-content">
@@ -199,7 +199,7 @@ get_header();
 <!-- Section About us start -->
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="px-4 px-lg-5">
+        <div class="px-md-4 px-lg-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bg-about-us.png" alt="About Us">
@@ -229,7 +229,7 @@ get_header();
 <!-- Section why choose start -->
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="px-4 px-lg-5">
+        <div class="px-md-4 px-lg-5">
             <div class="row g-5 align-items-center justify-content-center flex-column-reverse flex-md-row">
                 <div class="col-lg-6">
                     <div class="px-0 px-md-4">
@@ -384,7 +384,7 @@ get_header();
             <div class="d-inline-block text-primary px-4 mb-3">TIN TỨC</div>
             <h2 class="mb-5 section-heading">Cập nhật tin tức mới nhất</h2>
         </div>
-        <div class="px-4 px-lg-5">
+        <div class="px-md-4 px-lg-5">
             <div class="row g-5">
                 <?php
                 $args = array(

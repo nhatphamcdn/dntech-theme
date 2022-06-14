@@ -15,7 +15,7 @@ get_header();
 <!-- Section About us start -->
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="px-4 px-lg-5">
+        <div class="px-md-4 px-lg-5">
             <div class="row g-5 align-items-center justify-content-center flex-column-reverse flex-md-row">
                 <div class="col-lg-6">
                     <div class="px-0">
@@ -44,7 +44,7 @@ get_header();
 <!-- Section why choose start -->
 <div class="container-xxl py-5">
     <div class="container">
-        <div class="px-4 px-lg-5">
+        <div class="px-md-4 px-lg-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/target.png" alt="Target">

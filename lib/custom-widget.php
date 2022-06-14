@@ -130,6 +130,8 @@ class Custom_Genesis_Post extends WP_Widget {
 			if ( $instance['show_image'] && $image )
 				printf( '<a href="%s" title="%s" class="%s">%s</a>', get_permalink(), the_title_attribute( 'echo=0' ), esc_attr( $instance['image_alignment'] ), $image );
 
+			
+			echo '<div class="post-head">';
 			if ( ! empty( $instance['show_gravatar'] ) ) {
 				echo '<span class="' . esc_attr( $instance['gravatar_alignment'] ) . '">';
 				echo get_avatar( get_the_author_meta( 'ID' ), $instance['gravatar_size'] );
@@ -142,16 +144,16 @@ class Custom_Genesis_Post extends WP_Widget {
 			if ( $instance['show_title'] )
 				echo genesis_html5() ? '<header class="entry-header">' : '';
 
-				if ( ! empty( $instance['show_title'] ) ) {
+			if ( ! empty( $instance['show_title'] ) ) {
 
-					$title = get_the_title() ? get_the_title() : __( '(no title)', 'genesis' );
+				$title = get_the_title() ? get_the_title() : __( '(no title)', 'genesis' );
 
-					if ( genesis_html5() )
-						printf( '<h2 class="entry-title"><a href="%s">%s</a></h2>', get_permalink(), esc_html( $title ) );
-					else
-						printf( '<h2><a href="%s">%s</a></h2>', get_permalink(), esc_html( $title ) );
+				if ( genesis_html5() )
+					printf( '<h2 class="entry-title"><a href="%s">%s</a></h2>', get_permalink(), esc_html( $title ) );
+				else
+					printf( '<h2><a href="%s">%s</a></h2>', get_permalink(), esc_html( $title ) );
 
-				}
+			}
 
 			if ( $instance['show_title'] )
 				echo genesis_html5() ? '</header>' : '';
@@ -182,6 +184,8 @@ class Custom_Genesis_Post extends WP_Widget {
 				echo genesis_html5() ? '</div>' : '';
 
 			}
+
+			echo "</div>";
 
 			genesis_markup( array(
 				'html5' => '</article>',

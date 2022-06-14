@@ -341,6 +341,14 @@ ul.list {
 .breadcrumb {
     gap: .5rem;
     color: $black-text;
+
+    img {
+        opacity: 0.5;
+
+        &:last-child {
+            opacity: 1;
+        }
+    }
 }
 
 .breadcrumb-link {
@@ -348,6 +356,15 @@ ul.list {
 
     &:hover {
         color: $primary;
+    }
+}
+
+input {
+    &[type="text"],
+    &[type="search"] {
+        border: 1px solid $primary;
+        border-radius: 5px;
+        padding: 8px 16px;
     }
 }
 
@@ -508,3 +525,9 @@ footer {
     }
     /*--End Utilities--*/
 }
+
+
+
+
+
+@import './category-single.scss';

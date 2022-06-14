@@ -79,7 +79,7 @@ genesis_markup(
 
 <header class="header d-flex align-items-center">
 	<div class="container-xxl">
-		<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+		<nav class="navbar navbar-expand-lg navbar-light px-md-4 px-lg-5 py-3 py-lg-0">
 			<a href="/" class="navbar-brand p-0">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo@2x.png" alt="Logo">
 			</a>
@@ -96,7 +96,7 @@ genesis_markup(
 					'walker' => new MainMenu_Walker()
 				))
 				?>
-				<a href="#" class="btn btn-primary py-2 px-4 ms-lg-4">Nhận báo giá</a>
+				<a href="#" class="btn btn-primary py-2 px-md-4 ms-lg-4">Nhận báo giá</a>
 			</div>
 		</nav>
 	</div>
