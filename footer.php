@@ -11,7 +11,7 @@ do_action( 'genesis_before_footer' );
 
 <!-- Footer Start -->
 <footer class="section-with-bg">
-    <div class="container-fluid footer pt-md-5 pb-4">
+    <div class="container-fluid footer pt-5 pb-4">
         <div class="container">
             <div class="px-md-4 px-lg-5">
                 <div class="row g-5">

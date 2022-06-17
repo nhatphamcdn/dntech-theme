@@ -28,13 +28,15 @@ get_template_part('template-parts/breadcrumb');
                 </div>
                 <div class="col-md-7 ps-md-5">
                     <div class="main-content">
-                        <?php //the_content(); ?>
-                        <?php echo FrmFormsController::get_form_shortcode(array('id' => 2, 'title' => true, 'description' => true)); ?>
+                        <?php the_content(); ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="maps">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/map.png" alt="Liên hệ">
 </div>
 <?php
 get_footer(); //displays footer
