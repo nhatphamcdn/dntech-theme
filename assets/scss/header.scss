@@ -1,0 +1,33 @@
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+
+  &:hover,
+  &.current-menu-item {
+    color: $primary;
+  }
+}
+.navbar-nav {
+  .nav-item {
+    &.dropdown {
+      > a {
+        display: flex;
+        align-items: center;
+
+        &::after {
+          content: "";
+          background-image: url("../img/arrow-down.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          margin-left: 5px;
+        }
+
+        &:hover::after  {
+          background-image: url("../img/arrow-down-active.svg");
+        }
+      }
+    }
+  }
+}
