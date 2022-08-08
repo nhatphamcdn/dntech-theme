@@ -48,6 +48,13 @@ ul.list {
     }
 }
 
+.check-list-square {
+    .list li {
+        background-image: url('../img/check-square.svg');
+        background-position: left center;
+    }
+}
+
 .black-text {
     color: $black-text;
 }
@@ -150,6 +157,10 @@ ul.list {
 /*--Utilities--*/
 .section-heading {
     @include font-primary($w: 700, $s: 1.5rem, $l: 2rem);
+
+    &.h3 {
+        @include font-primary($w: 700, $s: 1.25rem, $l: 1.85rem);
+    }
 }
 
 .card {
@@ -546,3 +557,10 @@ footer {
         max-width: 100%;
     }
 }
+
+.hidden-x {
+    overflow-x: hidden;
+}
+
+@import './align-section.scss';
+

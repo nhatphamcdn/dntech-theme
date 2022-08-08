@@ -70,7 +70,7 @@ do_action('genesis_before');
 genesis_markup(
 	[
 		'open'    => '<div>',
-		'html5'   => sprintf('<div class="%s">', 'bg-white p-0'),
+		'html5'   => sprintf('<div class="%s">', 'bg-white hidden-x p-0'),
 	]
 );
 
