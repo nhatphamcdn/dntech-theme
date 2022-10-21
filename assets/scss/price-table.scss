@@ -1,0 +1,63 @@
+.divider {
+  display: block;
+  border-top: 1px solid #5EA6F8;
+  margin: 32px auto;
+}
+
+.plan {
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(129, 127, 127, 0.2);
+  border-radius: 20px;
+  padding: 3rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &.active {
+    border: 1px solid #5EA6F8;
+  }
+
+  &-heading {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* heading */
+    color: #000000;
+  }
+
+  &-price {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #5EA6F8;
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #817F7F;
+    }
+  }
+}
+
+.ticks-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #898686;
+  list-style: none;
+  padding: 0;
+
+  li {
+    background: url(../img/check-circle.svg) no-repeat left top 1px;
+    background-size: 1.25rem;
+    padding-left: 2rem;
+  }
+}

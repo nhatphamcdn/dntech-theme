@@ -2,6 +2,8 @@
 @import './font.scss';
 @import './timeline.scss';
 @import './header.scss';
+@import './price-table.scss';
+
 @mixin card-style {
     background-color: $dark-text;
     border-radius: 20px;
